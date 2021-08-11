@@ -11,7 +11,7 @@ fi
 # Compile SDK and install
 make sdk DEBUG=1
 make sdk_install_pkg DEBUG=1
-sudo mkdir -p /opt/intel
+mkdir -p /opt/intel
 cd /opt/intel
-yes yes | sudo ${SCRIPT_PATH}/linux/installer/bin/sgx_linux_x64_sdk_*.bin
+yes yes | ${SCRIPT_PATH}/linux/installer/bin/sgx_linux_x64_sdk_*.bin
 
